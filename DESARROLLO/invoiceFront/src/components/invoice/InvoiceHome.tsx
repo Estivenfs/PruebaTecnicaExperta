@@ -7,13 +7,7 @@ import { AddInvoiceItem } from "./AddInvoiceItem";
 
 
 export const InvoiceHome = () => {
-  const initCustomer = [{
-    customerId: 0,
-    firstName: "",
-    lastName: "",
-    address: ""
-  }];
-  const [customers, setCustomers] = useState<CustomerModel[]>(initCustomer);
+  const [customers, setCustomers] = useState<CustomerModel[]>([]);
   const [selectedCustomer, setSelectedCustomer] = useState<string>("0");
   const [invoiceItems, setInvoiceItems] = useState<InvoiceItemModel[]>([]);
 

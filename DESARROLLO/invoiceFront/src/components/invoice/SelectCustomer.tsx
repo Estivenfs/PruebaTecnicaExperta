@@ -72,7 +72,7 @@ export const SelectCustomer: React.FC<SelectCustomerProps> = ({
                 id="selectCustomer"
               >
                 <option value="0">Seleccionar</option>
-                {options.map((option) => (
+                {options.length>0 && options.map((option) => (
                   <option key={option.customerId} value={option.customerId}>
                     {option.lastName + ", " + option.firstName}
                   </option>
